@@ -1,5 +1,4 @@
-import { AppBar, Toolbar, Stack, Typography, IconButton, Button } from '@mui/material';
-import SwapHorizIcon from '@mui/icons-material/SwapHoriz';
+import { AppBar, Toolbar, Stack, Typography, Button } from '@mui/material';
 import { ColorPicker } from '../common/ColorPicker';
 import { BackgroundPicker } from './BackgroundPicker';
 
@@ -51,9 +50,6 @@ export function AppHeader({
           <Stack direction="row" spacing={1} sx={{ alignItems: 'center', marginLeft: 'auto' }}>
             <ColorPicker activeId={presetId} onChange={onPresetChange} />
             <BackgroundPicker activeId={backgroundId} onChange={onBackgroundChange} />
-            <IconButton onClick={onFlip} aria-label="Ansicht wechseln">
-              <SwapHorizIcon />
-            </IconButton>
           </Stack>
         </Toolbar>
       </AppBar>
